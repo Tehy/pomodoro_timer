@@ -19,7 +19,7 @@ const Timer = () => {
 
   const [seconds, setSeconds] = useState(workTime);
   const [pause, setPause] = useState(true);
-  const [breakCounter, setBreakCounter] = useState(3);
+  const [breakCounter, setBreakCounter] = useState(0);
   const [onBreak, setOnBreak] = useState(false);
   const [clicked, setClicked] = useState(false);
 
