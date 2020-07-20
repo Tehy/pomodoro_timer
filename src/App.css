@@ -1,18 +1,67 @@
 body {
-  background-color: #282c34;
+  background-color: #ff5738;
+  /* background-color: #7fc023; */
+}
+.App {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: monospace;
   margin: 35px;
 }
+.App h2 {
+  font-size: xx-large;
+}
+.description {
+  margin: 0;
+  color: whitesmoke;
+  margin-bottom: 80px;
+}
+button {
+  text-shadow: 1px 1px rgb(170, 53, 33);
+  color: rgb(255, 82, 51);
+  background-color: #dfca0d;
+
+  border-width: 1px;
+  border-style: double;
+
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 150px;
+  height: 45px;
+  transition: background-color, border-color 400ms;
+}
+button:hover {
+  background-color: rgb(85, 141, 85);
+  color: antiquewhite;
+  border-color: blanchedalmond;
+}
+.test-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 30px;
+  margin: 10px;
+  font-size: small;
+}
 .App-header {
-  margin-top: 50px;
-  background-color: #282c34;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   max-height: 20vh;
-  display: flex;
+  display: inline-block;
+  text-align: center;
   align-items: center;
   justify-content: center;
   color: whitesmoke;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 .timer {
+  position: relative;
   display: block;
   margin: auto;
   margin-top: 50px;
@@ -20,5 +69,11 @@ body {
   min-height: 250px;
   max-width: 400px;
   color: bisque;
-  border: 1px solid rgb(255, 123, 99);
+}
+.break-counter {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -25px;
 }
