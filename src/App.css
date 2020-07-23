@@ -2,7 +2,11 @@ body {
   background-color: #ff5738;
   /* background-color: #7fc023; */
 }
+:root {
+  --bg-color: #f5de14;
+}
 .App {
+  user-select: none;
   display: block;
   margin: auto;
   text-align: center;
@@ -18,9 +22,10 @@ body {
   margin-bottom: 80px;
 }
 button {
-  text-shadow: 1px 1px rgb(170, 53, 33);
+  cursor: pointer;
+  text-shadow: 0.5px 0.5px rgb(170, 53, 33);
   color: rgb(255, 82, 51);
-  background-color: #dfca0d;
+  background-color: var(--bg-color);
 
   border-width: 1px;
   border-style: double;
@@ -37,14 +42,26 @@ button:hover {
   color: antiquewhite;
   border-color: blanchedalmond;
 }
+button:focus {
+  outline: none;
+}
 .test-button {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 30px;
+  top: 7px;
+  left: 40px;
+  width: 45px;
+  height: 20px;
   margin: 10px;
-  font-size: small;
+  font-size: x-small;
+}
+.pause-button {
+  position: fixed;
+  top: 7px;
+  left: 90px;
+  width: 50px;
+  height: 20px;
+  margin: 10px;
+  font-size: x-small;
 }
 .App-header {
   margin-top: 10px;
@@ -76,4 +93,70 @@ button:hover {
   left: 50%;
   margin-left: -75px;
   margin-top: -25px;
+}
+.menu {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  transform: translateY(0);
+}
+.hamburger {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.menu-items {
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0;
+  border-width: 1px;
+  border-style: double;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  color: whitesmoke;
+  font-size: xx-small;
+  width: 100px;
+
+  position: absolute;
+
+  opacity: 0;
+  transform: translateX(1000%);
+  transition: opacity 0.3s;
+}
+.menu-items.show {
+  color: rgb(255, 82, 51);
+  text-shadow: 0.2px 0.2px rgb(170, 53, 33);
+  opacity: 1;
+  transform: translateX(-0px) translateY(0px);
+}
+.bar1,
+.bar2,
+.bar3 {
+  opacity: 0.8;
+  border-radius: 2px;
+  background-color: var(--bg-color);
+  height: 3px;
+  pointer-events: none;
+  margin-bottom: 3px;
+  transition: transform 0.4s, opacity 0.3s;
+}
+
+.hamburger.hamburger-clicked .bar2 {
+  opacity: 0;
+  transform: rotateX(45deg) rotateY(45deg);
+}
+
+.hamburger.hamburger-clicked .bar1 {
+  opacity: 1;
+  transform: translateY(6px) rotateZ(45deg);
+}
+
+.hamburger.hamburger-clicked .bar3 {
+  opacity: 1;
+  transform: translateY(-6px) rotateZ(-45deg);
 }
