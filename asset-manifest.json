@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pomodoro_timer/static/css/main.2d48a6de.chunk.css",
+    "main.css": "/pomodoro_timer/static/css/main.d49ce95d.chunk.css",
     "main.js": "/pomodoro_timer/static/js/main.d554a41b.chunk.js",
     "main.js.map": "/pomodoro_timer/static/js/main.d554a41b.chunk.js.map",
     "runtime-main.js": "/pomodoro_timer/static/js/runtime-main.cc49c19f.js",
@@ -8,15 +8,15 @@
     "static/js/2.49c7d791.chunk.js": "/pomodoro_timer/static/js/2.49c7d791.chunk.js",
     "static/js/2.49c7d791.chunk.js.map": "/pomodoro_timer/static/js/2.49c7d791.chunk.js.map",
     "index.html": "/pomodoro_timer/index.html",
-    "precache-manifest.a4b4b00d705c63d481b988a50d57e4f4.js": "/pomodoro_timer/precache-manifest.a4b4b00d705c63d481b988a50d57e4f4.js",
+    "precache-manifest.4da0c9a08af1cc0a9c25c5ed2a52bba2.js": "/pomodoro_timer/precache-manifest.4da0c9a08af1cc0a9c25c5ed2a52bba2.js",
     "service-worker.js": "/pomodoro_timer/service-worker.js",
-    "static/css/main.2d48a6de.chunk.css.map": "/pomodoro_timer/static/css/main.2d48a6de.chunk.css.map",
+    "static/css/main.d49ce95d.chunk.css.map": "/pomodoro_timer/static/css/main.d49ce95d.chunk.css.map",
     "static/js/2.49c7d791.chunk.js.LICENSE.txt": "/pomodoro_timer/static/js/2.49c7d791.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cc49c19f.js",
     "static/js/2.49c7d791.chunk.js",
-    "static/css/main.2d48a6de.chunk.css",
+    "static/css/main.d49ce95d.chunk.css",
     "static/js/main.d554a41b.chunk.js"
   ]
 }
